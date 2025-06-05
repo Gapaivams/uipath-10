@@ -1,6 +1,8 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="API_converter_valor" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="strValorConvertido" Type="OutArgument(x:String)" />
+    <x:Property Name="dblMoedaConvertidoSek" Type="OutArgument(x:Double)" />
+    <x:Property Name="dblMoedaConvertidoZar" Type="OutArgument(x:Double)" />
+    <x:Property Name="dblMoedaConvertidoDolar" Type="OutArgument(x:Double)" />
     <x:Property Name="strMoedaConversao" Type="InArgument(x:String)" />
     <x:Property Name="strValor" Type="InArgument(x:String)" />
   </x:Members>
@@ -101,20 +103,20 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.Collections.Specialized</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="API_converter_valor" sap:VirtualizedContainerService.HintSize="1310,780" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="API_converter_valor" sap:VirtualizedContainerService.HintSize="1309,666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="468,757" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="468,731" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strMoedaConversao" />
         <Variable x:TypeArguments="x:String" Name="strResponse" />
         <Variable x:TypeArguments="njl:JObject" Name="jsonValorMoeda" />
-        <Variable x:TypeArguments="x:Double" Name="dblMoedaConvertido" />
         <Variable x:TypeArguments="x:Double" Name="dblValorBRL" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
@@ -142,13 +144,29 @@
       <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jsonValorMoeda]" JsonString="[strResponse]" />
       <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
-          <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertido]</OutArgument>
+          <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoDolar]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Double">[cdbl(jsonValorMoeda(strMoedaConversao.ToUpper +"BRL")("high").ToString)]</InArgument>
+          <InArgument x:TypeArguments="x:Double">[cdbl(jsonValorMoeda("USDBRL")("high").ToString)]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoZar]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Double">[cdbl(jsonValorMoeda("ZARBRL")("high").ToString)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoSek]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Double">[cdbl(jsonValorMoeda("SEKBRL")("high").ToString)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Double">[dblValorBRL]</OutArgument>
         </Assign.To>
@@ -156,15 +174,6 @@
           <InArgument x:TypeArguments="x:Double">[CDbl(strValor)]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
-        <Assign.To>
-          <OutArgument x:TypeArguments="x:String">[strValorConvertido]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[(dblValorBRL * dblMoedaConvertido).ToString]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[strValorConvertido]" />
     </Sequence>
   </Sequence>
 </Activity>
