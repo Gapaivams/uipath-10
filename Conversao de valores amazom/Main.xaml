@@ -115,6 +115,9 @@
       <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1309,671" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -128,10 +131,10 @@
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          <av:Point x:Key="ShapeLocation">285,35</av:Point>
+          <av:Point x:Key="ShapeLocation">285,15</av:Point>
           <x:Double x:Key="StateContainerWidth">485</x:Double>
           <x:Double x:Key="StateContainerHeight">430</x:Double>
-          <av:PointCollection x:Key="ConnectorLocation">285,60 140,60 140,120</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">285,40 140,40 140,120</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <State x:Name="__ReferenceID4" DisplayName="inicialização" sap:VirtualizedContainerService.HintSize="150,60" sap2010:WorkflowViewState.IdRef="State_1">
@@ -160,7 +163,7 @@
                     <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[new Dictionary(of string, string)]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:BuildDataTable DataTable="[tblDados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Nome&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Preço&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Prazo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Temp_x0020_USA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Valor_x0020_USA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Temp_x0020_AfS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Valor_x0020_AfS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Temp_x0020_Sui&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Valor_x0020_Sui&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Temp_x0020_Egt&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Valor_x0020_Egt&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Previ_x0020_Mais_x0020_Vend.&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                <ui:BuildDataTable DataTable="[tblDados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Nome&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Preço&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Prazo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Temp_x0020_USA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Valor_x0020_USA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Temp_x0020_AfS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Valor_x0020_AfS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Temp_x0020_Sui&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Valor_x0020_Sui&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Temp_x0020_Egt&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Valor_x0020_Egt&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Previ_x0020_Mais_x0020_Vend.&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Inicialização - Invoke Workflow File (Frameworks\Inicialização.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Frameworks\Inicialização.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <scg:Dictionary x:TypeArguments="x:String, Argument" />
@@ -297,7 +300,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <Transition.Condition>[Erro is nothing and queItemFila isnot nothing]</Transition.Condition>
                     <Transition.To>
-                      <State x:Name="__ReferenceID3" DisplayName="Processamento" sap:VirtualizedContainerService.HintSize="150,60" sap2010:WorkflowViewState.IdRef="State_3">
+                      <State x:Name="__ReferenceID3" DisplayName="Processamento" sap:VirtualizedContainerService.HintSize="624,9332" sap2010:WorkflowViewState.IdRef="State_3">
                         <State.Entry>
                           <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="578,8971" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                             <TryCatch.Try>
@@ -1036,111 +1039,138 @@
                     <Transition.To>
                       <State x:Name="__ReferenceID2" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="150,60" sap2010:WorkflowViewState.IdRef="State_4" IsFinal="True">
                         <State.Entry>
-                          <Sequence sap:VirtualizedContainerService.HintSize="638,1796" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                          <Sequence sap:VirtualizedContainerService.HintSize="708,2157" sap2010:WorkflowViewState.IdRef="Sequence_62">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence sap:VirtualizedContainerService.HintSize="604,1207" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                              <Sequence.Variables>
-                                <Variable x:TypeArguments="sd:DataTable" Name="tblDadosFinal" />
-                              </Sequence.Variables>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <Assign sap:VirtualizedContainerService.HintSize="570,115" sap2010:WorkflowViewState.IdRef="Assign_5">
-                                <Assign.To>
-                                  <OutArgument x:TypeArguments="sd:DataTable">[tblDadosFinal]</OutArgument>
-                                </Assign.To>
-                                <Assign.Value>
-                                  <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[tblDados.AsEnumerable() _
-    .OrderBy(Function(row) Convert.ToDecimal(row("Preço").ToString.Replace("R$", "").Trim)) _
-    .Take(3) _
-    .CopyToDataTable()]</InArgument>
-                                </Assign.Value>
-                              </Assign>
-                              <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="570,1000" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
-                                <ueab:ExcelProcessScopeX.Body>
-                                  <ActivityAction x:TypeArguments="ui:IExcelProcess">
-                                    <ActivityAction.Argument>
-                                      <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
-                                    </ActivityAction.Argument>
-                                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="536,890" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <If Condition="[strProduto &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="674,2097" sap2010:WorkflowViewState.IdRef="If_18">
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="672,1879" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="638,1819" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="604,1207" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <Sequence.Variables>
+                                        <Variable x:TypeArguments="sd:DataTable" Name="tblDadosFinal" />
+                                      </Sequence.Variables>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="502,830" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\Aluno\Desktop\Produtos mais vendidos.xlsx">
-                                        <ueab:ExcelApplicationCard.Body>
-                                          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                      <Assign sap:VirtualizedContainerService.HintSize="570,115" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="sd:DataTable">[tblDadosFinal]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[tblDados.AsEnumerable() _
+    .OrderBy(Function(row) Convert.ToDecimal(row("Preço").ToString.Replace("R$", "").Trim)) _
+    .Take(3) _
+    .CopyToDataTable()]</InArgument>
+                                        </Assign.Value>
+                                      </Assign>
+                                      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="570,1000" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                                        <ueab:ExcelProcessScopeX.Body>
+                                          <ActivityAction x:TypeArguments="ui:IExcelProcess">
                                             <ActivityAction.Argument>
-                                              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                                             </ActivityAction.Argument>
-                                            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,538" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="536,890" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,148" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Plan1&quot;)]" />
-                                              <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Plan1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[tblDadosFinal]" />
-                                              <ueab:AutoFitX Columns="True" DisplayName="Autofit Range" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Range="[Excel.Sheet(&quot;Plan1&quot;)]" Rows="True" />
+                                              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="502,830" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="C:\Users\Aluno\Desktop\Produtos mais vendidos.xlsx">
+                                                <ueab:ExcelApplicationCard.Body>
+                                                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="468,538" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="False" sap:VirtualizedContainerService.HintSize="434,148" sap2010:WorkflowViewState.IdRef="ClearRangeX_1" TargetRange="[Excel.Sheet(&quot;Plan1&quot;)]" />
+                                                      <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Plan1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[tblDadosFinal]" />
+                                                      <ueab:AutoFitX Columns="True" DisplayName="Autofit Range" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Range="[Excel.Sheet(&quot;Plan1&quot;)]" Rows="True" />
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </ueab:ExcelApplicationCard.Body>
+                                              </ueab:ExcelApplicationCard>
                                             </Sequence>
                                           </ActivityAction>
-                                        </ueab:ExcelApplicationCard.Body>
-                                      </ueab:ExcelApplicationCard>
+                                        </ueab:ExcelProcessScopeX.Body>
+                                      </ueab:ExcelProcessScopeX>
                                     </Sequence>
-                                  </ActivityAction>
-                                </ueab:ExcelProcessScopeX.Body>
-                              </ueab:ExcelProcessScopeX>
-                            </Sequence>
-                            <Sequence sap:VirtualizedContainerService.HintSize="604,529" sap2010:WorkflowViewState.IdRef="Sequence_30">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID1}" ReplyTo="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="a856437f-eae5-4da5-ab4a-5eece9af87d1" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,446" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="O robo terminou de executar a pesquisa" TextBody="[&quot;O robo terminou de executar a pesquisa de viabilidade do produto &quot; + strProduto + &quot;, os paises com maior viabilidade de vendas é(são) &quot; + strMVendidos.Replace(&quot;+&quot;, &quot; &quot;).TrimEnd(&quot;,&quot;c)]" To="[New String(){&quot;gabriel.paiva.ms@hotmail.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
-                                <umam:SendMailConnections.AttachmentList>
-                                  <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
-                                    <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Aluno\\Desktop\\Produtos mais vendidos.xlsx")]</InArgument>
-                                  </scg:List>
-                                </umam:SendMailConnections.AttachmentList>
-                                <umam:SendMailConnections.AttachmentsBackup>
-                                  <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Builder">
-                                    <usau:BackupSlot.BackupValues>
-                                      <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
-                                        <x:Null />
-                                      </scg:List>
-                                    </usau:BackupSlot.BackupValues>
-                                  </usau:BackupSlot>
-                                </umam:SendMailConnections.AttachmentsBackup>
-                                <umam:SendMailConnections.InputTypeBackup>
-                                  <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="TEXT">
-                                    <usau:BackupSlot.BackupValues>
-                                      <scg:List x:TypeArguments="x:Object" x:Key="HTML" Capacity="1">
-                                        <InArgument x:TypeArguments="x:String" />
-                                      </scg:List>
-                                    </usau:BackupSlot.BackupValues>
-                                  </usau:BackupSlot>
-                                </umam:SendMailConnections.InputTypeBackup>
-                                <umam:SendMailConnections.MailboxArg>
-                                  <umamm:MailboxArgument SharedMailbox="{x:Null}" UseSharedMailbox="False">
-                                    <umamm:MailboxArgument.Backup>
-                                      <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" x:Name="__ReferenceID1" StoredValue="NoMailbox">
-                                        <usau:BackupSlot.BackupValues>
-                                          <scg:Dictionary x:TypeArguments="umame:MailboxSelectionMode, scg:List(x:Object)" />
-                                        </usau:BackupSlot.BackupValues>
-                                      </usau:BackupSlot>
-                                    </umamm:MailboxArgument.Backup>
-                                  </umamm:MailboxArgument>
-                                </umam:SendMailConnections.MailboxArg>
-                              </umam:SendMailConnections>
-                            </Sequence>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="604,529" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID1}" ReplyTo="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="a856437f-eae5-4da5-ab4a-5eece9af87d1" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,446" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="O robo terminou de executar a pesquisa" TextBody="[&quot;O robo terminou de executar a pesquisa de viabilidade do produto &quot; + strProduto + &quot;, os paises com maior viabilidade de vendas é(são) &quot; + strMVendidos.Replace(&quot;+&quot;, &quot; &quot;).TrimEnd(&quot;,&quot;c)]" To="[New String(){&quot;gabriel.paiva.ms@hotmail.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+                                        <umam:SendMailConnections.AttachmentList>
+                                          <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
+                                            <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Aluno\\Desktop\\Produtos mais vendidos.xlsx")]</InArgument>
+                                          </scg:List>
+                                        </umam:SendMailConnections.AttachmentList>
+                                        <umam:SendMailConnections.AttachmentsBackup>
+                                          <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Builder">
+                                            <usau:BackupSlot.BackupValues>
+                                              <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+                                                <x:Null />
+                                              </scg:List>
+                                            </usau:BackupSlot.BackupValues>
+                                          </usau:BackupSlot>
+                                        </umam:SendMailConnections.AttachmentsBackup>
+                                        <umam:SendMailConnections.InputTypeBackup>
+                                          <usau:BackupSlot x:TypeArguments="umame:BodyInputType" StoredValue="TEXT">
+                                            <usau:BackupSlot.BackupValues>
+                                              <scg:List x:TypeArguments="x:Object" x:Key="HTML" Capacity="1">
+                                                <InArgument x:TypeArguments="x:String" />
+                                              </scg:List>
+                                            </usau:BackupSlot.BackupValues>
+                                          </usau:BackupSlot>
+                                        </umam:SendMailConnections.InputTypeBackup>
+                                        <umam:SendMailConnections.MailboxArg>
+                                          <umamm:MailboxArgument SharedMailbox="{x:Null}" UseSharedMailbox="False">
+                                            <umamm:MailboxArgument.Backup>
+                                              <usau:BackupSlot x:TypeArguments="umame:MailboxSelectionMode" x:Name="__ReferenceID1" StoredValue="NoMailbox">
+                                                <usau:BackupSlot.BackupValues>
+                                                  <scg:Dictionary x:TypeArguments="umame:MailboxSelectionMode, scg:List(x:Object)" />
+                                                </usau:BackupSlot.BackupValues>
+                                              </usau:BackupSlot>
+                                            </umamm:MailboxArgument.Backup>
+                                          </umamm:MailboxArgument>
+                                        </umam:SendMailConnections.MailboxArg>
+                                      </umam:SendMailConnections>
+                                    </Sequence>
+                                  </Sequence>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="672,89" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
                           </Sequence>
                         </State.Entry>
                         <sap:WorkflowViewStateService.ViewState>
