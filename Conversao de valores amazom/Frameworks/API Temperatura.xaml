@@ -132,7 +132,7 @@
                       <OutArgument x:TypeArguments="scg:List(x:String)">[lsPaises]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String) From {"South+Africa", "USA", "Suica"}]</InArgument>
+                      <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String) From {"South+Africa", "USA", "Suica", "Egito"}]</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
                 </scg:List>
