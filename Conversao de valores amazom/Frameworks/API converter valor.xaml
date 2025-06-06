@@ -112,7 +112,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="468,1096" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="468,1073" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strMoedaConversao" />
         <Variable x:TypeArguments="x:String" Name="strResponse" />
@@ -163,7 +163,7 @@
           <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoDolar]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Double">[dblValorBRL / dblMoedaConvertidoDolar]</InArgument>
+          <InArgument x:TypeArguments="x:Double">[math.round(dblValorBRL / dblMoedaConvertidoDolar, 2)]</InArgument>
         </Assign.Value>
       </Assign>
       <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
@@ -179,7 +179,7 @@
           <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoZar]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Double">[dblValorBRL / dblMoedaConvertidoZar]</InArgument>
+          <InArgument x:TypeArguments="x:Double">[math.round(dblValorBRL / dblMoedaConvertidoZar, 2)]</InArgument>
         </Assign.Value>
       </Assign>
       <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
@@ -195,7 +195,7 @@
           <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoSek]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Double">[dblValorBRL / dblMoedaConvertidoSek]</InArgument>
+          <InArgument x:TypeArguments="x:Double">[math.round(dblValorBRL / dblMoedaConvertidoSek, 2)]</InArgument>
         </Assign.Value>
       </Assign>
     </Sequence>

@@ -105,7 +105,7 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Inicialização" sap:VirtualizedContainerService.HintSize="1309,2429" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Inicialização" sap:VirtualizedContainerService.HintSize="1561,2429" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -121,7 +121,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="583,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_5" ProviderName="System.Data.Odbc" ConnectionString="Driver={MySQL ODBC 9.3 Unicode Driver};server=localhost;port=3306;database=ProjetoSQL;uid=root" DatabaseConnection="[GlobalVariablesNamespace.GlobalVariables.dbConexaçao]" />
-      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Run Query" ExistingDbConnection="[dbConexaçao]" sap:VirtualizedContainerService.HintSize="583,146" sap2010:WorkflowViewState.IdRef="ExecuteQuery_3" Sql="delete from produtos">
+      <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Run Query" ExistingDbConnection="[GlobalVariablesNamespace.GlobalVariables.dbConexaçao]" sap:VirtualizedContainerService.HintSize="583,146" sap2010:WorkflowViewState.IdRef="ExecuteQuery_3" Sql="delete from produtos">
         <ui:ExecuteQuery.Parameters>
           <scg:Dictionary x:TypeArguments="x:String, Argument" />
         </ui:ExecuteQuery.Parameters>

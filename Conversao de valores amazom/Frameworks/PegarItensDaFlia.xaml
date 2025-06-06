@@ -76,9 +76,10 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PegarItensDaFlia" sap:VirtualizedContainerService.HintSize="1315,650.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PegarItensDaFlia" sap:VirtualizedContainerService.HintSize="1315,604.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
