@@ -160,7 +160,7 @@
                     <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[new Dictionary(of string, string)]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:BuildDataTable DataTable="[tblDados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Nome&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Preço&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Prazo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Temp_x0020_USA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Valor_x0020_USA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Temp_x0020_AfS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Valor_x0020_AfS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Temp_x0020_Sui&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Valor_x0020_Sui&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Temp_x0020_Egt&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Valor_x0020_Egt&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Previ_x0020_Mais_x0020_Vend.&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+                <ui:BuildDataTable DataTable="[tblDados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Nome&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Preço&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Prazo&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;URL&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Temp_x0020_USA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Valor_x0020_USA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Temp_x0020_AfS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Valor_x0020_AfS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Temp_x0020_Sui&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Valor_x0020_Sui&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Temp_x0020_Egt&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Valor_x0020_Egt&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Previ_x0020_Mais_x0020_Vend.&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Inicialização - Invoke Workflow File (Frameworks\Inicialização.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Frameworks\Inicialização.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <scg:Dictionary x:TypeArguments="x:String, Argument" />
@@ -297,11 +297,11 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <Transition.Condition>[Erro is nothing and queItemFila isnot nothing]</Transition.Condition>
                     <Transition.To>
-                      <State x:Name="__ReferenceID3" DisplayName="Processamento" sap:VirtualizedContainerService.HintSize="624,7436" sap2010:WorkflowViewState.IdRef="State_3">
+                      <State x:Name="__ReferenceID3" DisplayName="Processamento" sap:VirtualizedContainerService.HintSize="150,60" sap2010:WorkflowViewState.IdRef="State_3">
                         <State.Entry>
-                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="578,7075" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="578,8971" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                             <TryCatch.Try>
-                              <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="576,6761" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <Sequence DisplayName="Tentar" sap:VirtualizedContainerService.HintSize="576,8657" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="strNome" />
                                   <Variable x:TypeArguments="x:String" Name="strURL" />
@@ -383,7 +383,7 @@
                                     <InArgument x:TypeArguments="x:String">[strProduto.Replace("+"," ")]</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <ui:IfElseIfV2 Condition="[strProduto = &quot;Aquecedor&quot;]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="542,5324" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+                                <ui:IfElseIfV2 Condition="[strProduto = &quot;Aquecedor&quot;]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="542,7220" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
                                   <ui:IfElseIfV2.Else>
                                     <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="540,89" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                       <sap:WorkflowViewStateService.ViewState>
@@ -397,25 +397,25 @@
                                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                       <ui:IfElseIfBlock BlockType="ElseIf" Condition="[strProduto = &quot;Ar Condicionado&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,814" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,1130" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,754" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
+                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,573" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
                                               <ui:ForEach.Body>
                                                 <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
                                                   <ActivityAction.Argument>
                                                     <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="Temperatura" />
                                                   </ActivityAction.Argument>
-                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,633" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,443" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <If Condition="[Cint(Temperatura.value) &gt; 20]" sap:VirtualizedContainerService.HintSize="470,573" sap2010:WorkflowViewState.IdRef="If_3">
+                                                    <If Condition="[Cint(Temperatura.value) &gt; 20]" sap:VirtualizedContainerService.HintSize="470,383" sap2010:WorkflowViewState.IdRef="If_3">
                                                       <If.Then>
                                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                                           <sap:WorkflowViewStateService.ViewState>
@@ -434,31 +434,12 @@
                                                         </Sequence>
                                                       </If.Then>
                                                       <If.Else>
-                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_24">
-                                                          <Sequence.Variables>
-                                                            <Variable x:TypeArguments="x:String" Name="strMenorTemp" />
-                                                          </Sequence.Variables>
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_22">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderByDescending(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_15">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
                                                         </Sequence>
                                                       </If.Else>
                                                     </If>
@@ -466,30 +447,66 @@
                                                 </ActivityAction>
                                               </ui:ForEach.Body>
                                             </ui:ForEach>
+                                            <If Condition="[strMVendidos = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="506,497" sap2010:WorkflowViewState.IdRef="If_12">
+                                              <If.Then>
+                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderByDescending(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
                                           </Sequence>
                                         </ui:IfElseIfBlock.Then>
                                       </ui:IfElseIfBlock>
                                       <ui:IfElseIfBlock BlockType="ElseIf" Condition="[strProduto = &quot;Coberta&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,814" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,1130" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,754" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
+                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,573" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
                                               <ui:ForEach.Body>
                                                 <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
                                                   <ActivityAction.Argument>
                                                     <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="Temperatura" />
                                                   </ActivityAction.Argument>
-                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,633" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,443" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <If Condition="[Cint(Temperatura.value) &lt; 20]" sap:VirtualizedContainerService.HintSize="470,573" sap2010:WorkflowViewState.IdRef="If_4">
+                                                    <If Condition="[Cint(Temperatura.value) &lt; 20]" sap:VirtualizedContainerService.HintSize="470,383" sap2010:WorkflowViewState.IdRef="If_4">
                                                       <If.Then>
                                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                                           <sap:WorkflowViewStateService.ViewState>
@@ -508,7 +525,7 @@
                                                         </Sequence>
                                                       </If.Then>
                                                       <If.Else>
-                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                                           <Sequence.Variables>
                                                             <Variable x:TypeArguments="x:String" Name="strMenorTemp" />
                                                           </Sequence.Variables>
@@ -517,22 +534,6 @@
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_23">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderBy(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_17">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
                                                         </Sequence>
                                                       </If.Else>
                                                     </If>
@@ -540,30 +541,66 @@
                                                 </ActivityAction>
                                               </ui:ForEach.Body>
                                             </ui:ForEach>
+                                            <If Condition="[strMVendidos = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="506,497" sap2010:WorkflowViewState.IdRef="If_13">
+                                              <If.Then>
+                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderBy(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
                                           </Sequence>
                                         </ui:IfElseIfBlock.Then>
                                       </ui:IfElseIfBlock>
                                       <ui:IfElseIfBlock BlockType="ElseIf" Condition="[strProduto = &quot;Blusa&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,814" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,1130" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,754" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
+                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,573" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
                                               <ui:ForEach.Body>
                                                 <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
                                                   <ActivityAction.Argument>
                                                     <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="Temperatura" />
                                                   </ActivityAction.Argument>
-                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,633" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,443" sap2010:WorkflowViewState.IdRef="Sequence_36">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <If Condition="[Cint(Temperatura.value) &lt; 18]" sap:VirtualizedContainerService.HintSize="470,573" sap2010:WorkflowViewState.IdRef="If_8">
+                                                    <If Condition="[Cint(Temperatura.value) &lt; 18]" sap:VirtualizedContainerService.HintSize="470,383" sap2010:WorkflowViewState.IdRef="If_8">
                                                       <If.Then>
                                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                                           <sap:WorkflowViewStateService.ViewState>
@@ -582,7 +619,7 @@
                                                         </Sequence>
                                                       </If.Then>
                                                       <If.Else>
-                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                                           <Sequence.Variables>
                                                             <Variable x:TypeArguments="x:String" Name="strMenorTemp" />
                                                           </Sequence.Variables>
@@ -591,22 +628,6 @@
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_24">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderBy(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_18">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
                                                         </Sequence>
                                                       </If.Else>
                                                     </If>
@@ -614,30 +635,66 @@
                                                 </ActivityAction>
                                               </ui:ForEach.Body>
                                             </ui:ForEach>
+                                            <If Condition="[strMVendidos = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="506,497" sap2010:WorkflowViewState.IdRef="If_14">
+                                              <If.Then>
+                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderBy(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
                                           </Sequence>
                                         </ui:IfElseIfBlock.Then>
                                       </ui:IfElseIfBlock>
                                       <ui:IfElseIfBlock BlockType="ElseIf" Condition="[strProduto = &quot;Chinelo&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_4">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,814" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,1130" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,754" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
+                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,573" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
                                               <ui:ForEach.Body>
                                                 <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
                                                   <ActivityAction.Argument>
                                                     <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="Temperatura" />
                                                   </ActivityAction.Argument>
-                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,633" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,443" sap2010:WorkflowViewState.IdRef="Sequence_39">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <If Condition="[Cint(Temperatura.value) &gt; 22]" sap:VirtualizedContainerService.HintSize="470,573" sap2010:WorkflowViewState.IdRef="If_9">
+                                                    <If Condition="[Cint(Temperatura.value) &gt; 22]" sap:VirtualizedContainerService.HintSize="470,383" sap2010:WorkflowViewState.IdRef="If_9">
                                                       <If.Then>
                                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                                           <sap:WorkflowViewStateService.ViewState>
@@ -656,7 +713,7 @@
                                                         </Sequence>
                                                       </If.Then>
                                                       <If.Else>
-                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                                           <Sequence.Variables>
                                                             <Variable x:TypeArguments="x:String" Name="strMenorTemp" />
                                                           </Sequence.Variables>
@@ -665,22 +722,6 @@
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_25">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderByDescending(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_19">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
                                                         </Sequence>
                                                       </If.Else>
                                                     </If>
@@ -688,30 +729,66 @@
                                                 </ActivityAction>
                                               </ui:ForEach.Body>
                                             </ui:ForEach>
+                                            <If Condition="[strMVendidos = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="506,497" sap2010:WorkflowViewState.IdRef="If_15">
+                                              <If.Then>
+                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_25">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderByDescending(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
                                           </Sequence>
                                         </ui:IfElseIfBlock.Then>
                                       </ui:IfElseIfBlock>
                                       <ui:IfElseIfBlock BlockType="ElseIf" Condition="[strProduto = &quot;Bota&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_5">
                                         <ui:IfElseIfBlock.Then>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,814" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,1130" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,754" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
+                                            <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,573" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
                                               <ui:ForEach.Body>
                                                 <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
                                                   <ActivityAction.Argument>
                                                     <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="Temperatura" />
                                                   </ActivityAction.Argument>
-                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,633" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,443" sap2010:WorkflowViewState.IdRef="Sequence_42">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <If Condition="[Cint(Temperatura.value) &lt; 15]" sap:VirtualizedContainerService.HintSize="470,573" sap2010:WorkflowViewState.IdRef="If_10">
+                                                    <If Condition="[Cint(Temperatura.value) &lt; 15]" sap:VirtualizedContainerService.HintSize="470,383" sap2010:WorkflowViewState.IdRef="If_10">
                                                       <If.Then>
                                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                                           <sap:WorkflowViewStateService.ViewState>
@@ -730,7 +807,7 @@
                                                         </Sequence>
                                                       </If.Then>
                                                       <If.Else>
-                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_41">
                                                           <Sequence.Variables>
                                                             <Variable x:TypeArguments="x:String" Name="strMenorTemp" />
                                                           </Sequence.Variables>
@@ -739,22 +816,6 @@
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_26">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderBy(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
-                                                          <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_20">
-                                                            <Assign.To>
-                                                              <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
-                                                            </Assign.To>
-                                                            <Assign.Value>
-                                                              <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
-                                                            </Assign.Value>
-                                                          </Assign>
                                                         </Sequence>
                                                       </If.Else>
                                                     </If>
@@ -762,31 +823,67 @@
                                                 </ActivityAction>
                                               </ui:ForEach.Body>
                                             </ui:ForEach>
+                                            <If Condition="[strMVendidos = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="506,497" sap2010:WorkflowViewState.IdRef="If_16">
+                                              <If.Then>
+                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_26">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderBy(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                                    <Assign.To>
+                                                      <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
+                                                    </Assign.To>
+                                                    <Assign.Value>
+                                                      <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
+                                                    </Assign.Value>
+                                                  </Assign>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
                                           </Sequence>
                                         </ui:IfElseIfBlock.Then>
                                       </ui:IfElseIfBlock>
                                     </sc:BindingList>
                                   </ui:IfElseIfV2.ElseIfs>
                                   <ui:IfElseIfV2.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="540,814" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="540,1130" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,754" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
+                                      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Temperatura" sap:VirtualizedContainerService.HintSize="506,573" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[GlobalVariablesNamespace.GlobalVariables.dictTemperaturas]">
                                         <ui:ForEach.Body>
                                           <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="Temperatura" />
                                             </ActivityAction.Argument>
-                                            <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,633" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                            <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="504,443" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <If Condition="[Cint(Temperatura.value) &lt; 10]" sap:VirtualizedContainerService.HintSize="470,573" sap2010:WorkflowViewState.IdRef="If_2">
+                                              <If Condition="[Cint(Temperatura.value) &lt; 10]" sap:VirtualizedContainerService.HintSize="470,383" sap2010:WorkflowViewState.IdRef="If_2">
                                                 <If.Then>
                                                   <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                                     <sap:WorkflowViewStateService.ViewState>
@@ -805,31 +902,12 @@
                                                   </Sequence>
                                                 </If.Then>
                                                 <If.Else>
-                                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_18">
-                                                    <Sequence.Variables>
-                                                      <Variable x:TypeArguments="x:String" Name="strMenorTemp" />
-                                                    </Sequence.Variables>
+                                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_21">
-                                                      <Assign.To>
-                                                        <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
-                                                      </Assign.To>
-                                                      <Assign.Value>
-                                                        <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderBy(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
-                                                      </Assign.Value>
-                                                    </Assign>
-                                                    <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_16">
-                                                      <Assign.To>
-                                                        <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
-                                                      </Assign.To>
-                                                      <Assign.Value>
-                                                        <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
-                                                      </Assign.Value>
-                                                    </Assign>
                                                   </Sequence>
                                                 </If.Else>
                                               </If>
@@ -837,10 +915,46 @@
                                           </ActivityAction>
                                         </ui:ForEach.Body>
                                       </ui:ForEach>
+                                      <If Condition="[strMVendidos = &quot;&quot;]" sap:VirtualizedContainerService.HintSize="506,497" sap2010:WorkflowViewState.IdRef="If_11">
+                                        <If.Then>
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[strMenorTemp]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[dictTemperaturas.OrderBy(Function(kvp) kvp.Value).FirstOrDefault().Key]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[strMVendidos]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[strMenorTemp]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
                                     </Sequence>
                                   </ui:IfElseIfV2.Then>
                                 </ui:IfElseIfV2>
-                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strNome,&quot;R$&quot;+strValor,strPrazo,strURL,&#xD;&#xA;dictTemperaturas(&quot;USA&quot;).toString+&quot;º&quot;, &quot;'$&quot; + dblMoedaConvertidoDolar.ToString, &#xD;&#xA;dictTemperaturas(&quot;South+Africa&quot;).ToString+&quot;º&quot;, &quot;R&quot;+dblMoedaConvertidoZar.ToString , &#xD;&#xA;dictTemperaturas(&quot;Suica&quot;).ToString+&quot;º&quot;, &quot;kr&quot;+dblMoedaConvertidoSek.ToString, &#xD;&#xA;dictTemperaturas(&quot;Egito&quot;).ToString+&quot;º&quot;, &quot;£&quot;+dblMoedaConvertidoEgp.toString,&#xD;&#xA;strMVendidos.Replace(&quot;+&quot;, &quot; &quot;).TrimEnd(&quot;,&quot;c)}]" DataTable="[tblDados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="542,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{strNome,&quot;R$&quot;+strValor,strPrazo,strURL,&#xA;dictTemperaturas(&quot;USA&quot;).toString+&quot;º&quot;, &quot;'$&quot; + dblMoedaConvertidoDolar.ToString, &#xA;dictTemperaturas(&quot;South+Africa&quot;).ToString+&quot;º&quot;, &quot;R&quot;+dblMoedaConvertidoZar.ToString , &#xA;dictTemperaturas(&quot;Suica&quot;).ToString+&quot;º&quot;, &quot;kr&quot;+dblMoedaConvertidoSek.ToString, &#xA;dictTemperaturas(&quot;Egito&quot;).ToString+&quot;º&quot;, &quot;£&quot;+dblMoedaConvertidoEgp.toString,&#xA;strMVendidos.Replace(&quot;+&quot;, &quot; &quot;).TrimEnd(&quot;,&quot;c)}]" DataTable="[tblDados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="542,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
                                 <ui:SetTransactionStatus ContinueOnError="{x:Null}" FolderPath="{x:Null}" Reason="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" sap:VirtualizedContainerService.HintSize="542,172" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_1" Status="Successful" TransactionItem="[queItemFila]">
                                   <ui:SetTransactionStatus.Analytics>
                                     <scg:Dictionary x:TypeArguments="x:String, InArgument" />
@@ -905,6 +1019,7 @@
                           <Variable x:TypeArguments="x:Double" Name="dblMoedaConvertidoZar" />
                           <Variable x:TypeArguments="x:Double" Name="dblMoedaConvertidoDolar" />
                           <Variable x:TypeArguments="scg:List(x:String)" Name="lsTemperaturas" />
+                          <Variable x:TypeArguments="x:String" Name="strMenorTemp" />
                         </State.Variables>
                       </State>
                     </Transition.To>
@@ -989,7 +1104,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID1}" ReplyTo="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="a856437f-eae5-4da5-ab4a-5eece9af87d1" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,446" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="O robo terminou de executar a pesquisa" TextBody="[&quot;O robo terminou de executar a pesquisa de viabilidade do produto &quot; + strProduto + &quot;, os paises com maior viabilidade de vendas sao&quot; + strMVendidos.Replace(&quot;+&quot;, &quot; &quot;).TrimEnd(&quot;,&quot;c)]" To="[New String(){&quot;gabriel.paiva.ms@hotmail.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
+                              <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID1}" ReplyTo="{x:Null}" AttachmentInputMode="Builder" AuthScopesInvalid="False" ConnectionId="a856437f-eae5-4da5-ab4a-5eece9af87d1" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,446" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="TEXT" SaveAsDraft="False" Subject="O robo terminou de executar a pesquisa" TextBody="[&quot;O robo terminou de executar a pesquisa de viabilidade do produto &quot; + strProduto + &quot;, os paises com maior viabilidade de vendas sao &quot; + strMVendidos.Replace(&quot;+&quot;, &quot; &quot;).TrimEnd(&quot;,&quot;c)]" To="[New String(){&quot;gabriel.paiva.ms@hotmail.com&quot;}]" UseConnectionService="True" UseSharedMailbox="False">
                                 <umam:SendMailConnections.AttachmentList>
                                   <scg:List x:TypeArguments="InArgument(upr:IResource)" Capacity="4">
                                     <InArgument x:TypeArguments="upr:IResource">[LocalResource.FromPath("C:\\Users\\Aluno\\Desktop\\Produtos mais vendidos.xlsx")]</InArgument>
