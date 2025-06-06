@@ -1,7 +1,7 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="API_converter_valor" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="dblMoedaConvertidoEgp" Type="OutArgument(x:Double)" />
-    <x:Property Name="dblMoedaConvertidoSek" Type="OutArgument(x:Double)" />
+    <x:Property Name="dblMoedaConvertidoChf" Type="OutArgument(x:Double)" />
     <x:Property Name="dblMoedaConvertidoZar" Type="OutArgument(x:Double)" />
     <x:Property Name="dblMoedaConvertidoDolar" Type="OutArgument(x:Double)" />
     <x:Property Name="strValor" Type="InArgument(x:String)" />
@@ -107,13 +107,13 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="API_converter_valor" sap:VirtualizedContainerService.HintSize="1309,1119" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="API_converter_valor" sap:VirtualizedContainerService.HintSize="1309,1347" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="468,1301" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="468,1324" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strMoedaConversao" />
         <Variable x:TypeArguments="x:String" Name="strResponse" />
@@ -125,7 +125,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="Http client" EnableSSLVerification="True" EndPoint="https://economia.awesomeapi.com.br/json/last/usd-brl,zar-brl,sek-brl,egp-brl" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[strResponse]" TimeoutMS="6000">
+      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="Http client" EnableSSLVerification="True" EndPoint="https://economia.awesomeapi.com.br/json/last/usd-brl,zar-brl,chf-brl,egp-brl" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[strResponse]" TimeoutMS="6000">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>
@@ -185,18 +185,18 @@
       </Assign>
       <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
         <Assign.To>
-          <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoSek]</OutArgument>
+          <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoChf]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Double">[cdbl(jsonValorMoeda("SEKBRL")("high").ToString)]</InArgument>
+          <InArgument x:TypeArguments="x:Double">[cdbl(jsonValorMoeda("CHFBRL")("high").ToString)]</InArgument>
         </Assign.Value>
       </Assign>
       <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_10">
         <Assign.To>
-          <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoSek]</OutArgument>
+          <OutArgument x:TypeArguments="x:Double">[dblMoedaConvertidoChf]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Double">[math.round(dblValorBRL / dblMoedaConvertidoSek, 2)]</InArgument>
+          <InArgument x:TypeArguments="x:Double">[math.round(dblValorBRL / dblMoedaConvertidoChf, 2)]</InArgument>
         </Assign.Value>
       </Assign>
       <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_11">
